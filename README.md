@@ -2,7 +2,7 @@
 Getting started.
 ----------------
 
-Está biblioteca suporta Python 2.7, Python 3.4</br></br>
+Esta biblioteca suporta Python 2.7, Python 3.4</br></br>
  Há duas maneiras de instalar a lib:
 
 -  Instalação usando pip (Gerenciador de Pacotes do Python)\*:
