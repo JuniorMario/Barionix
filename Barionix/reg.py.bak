@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-import  sys, termios, urllib.request, urllib.error, urllib.parse, requests
+import  sys, termios, urllib2, requests
 list_tags = """style, img, src, js, script, class, id, type, link, rel"""
 tags = []
 preTags = []
@@ -12,8 +12,8 @@ def make_request(url):
        'Connection': 'keep-alive'}
 	try:
 	    req = requests.get(str(url), headers=hdr)
-	except urllib.error.HTTPError as e:
-	    print(e.fp.read())
+	except urllib2.HTTPError, e:
+	    print e.fp.read()
 	return str(req.content)
 def links(url):
 	req = make_request(url)
